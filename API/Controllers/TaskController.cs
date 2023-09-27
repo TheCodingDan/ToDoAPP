@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    [Authorize]
+    [AllowAnonymous]
     public class TaskController : BaseAPIController
     {
         private readonly TaskService _taskService;
