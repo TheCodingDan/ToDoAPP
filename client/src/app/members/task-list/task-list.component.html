@@ -1,0 +1,14 @@
+<br>
+<br>
+<div class="container">
+
+</div>
+<div *ngIf="taskService.tasks as tasks">
+    <div *ngFor="let task of tasks">
+        <div class="task">
+            {{task.name}} | {{task.category |titlecase}} | {{task.priority | titlecase}}
+        </div>
+    </div>
+</div>
+
+<button class="task-button"><i class="bi bi-plus-circle-dotted"></i> &nbsp;&nbsp;&nbsp; ADD TASK</button>
